@@ -1,0 +1,101 @@
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: 100px auto 60px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.container h1 {
+    color: rgb(18, 11, 78);
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Admin Menu Styling */
+.admin-menu {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.admin-menu li {
+    background: linear-gradient(135deg, rgba(18, 11, 78, 0.9), rgba(18, 11, 78, 0.7));
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-menu li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.admin-menu li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.admin-menu li a .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.admin-menu li a span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.admin-menu li a:hover .icon {
+    transform: scale(1.2);
+}
+
+.admin-menu li a:hover span {
+    color: #ff6f61;
+}
+
+/* Content Styling */
+#content h3 {
+    margin-top: 40px;
+    color: #555;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admin-menu {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .admin-menu li a {
+        padding: 20px 15px;
+    }
+
+    .admin-menu li a .icon {
+        font-size: 2rem;
+    }
+
+    .admin-menu li a span {
+        font-size: 1rem;
+    }
+}

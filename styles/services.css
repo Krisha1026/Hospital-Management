@@ -1,0 +1,125 @@
+/* General Styling */
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Banner Image Styling */
+.banner-image {
+    width: 80%; 
+    max-width: 600px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin: 20px auto; 
+    display: block; 
+}
+
+
+/* Main Container */
+.main-container {
+    padding: 20px;
+}
+
+/* Section Styling */
+.labs-tests {
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: rgb(18, 11, 78);
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.subtitle {
+    font-size: 2rem;
+    color: rgb(18, 11, 78);
+    margin-bottom: 20px;
+}
+
+/* Package Grid */
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Package Styling */
+.package {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.package-title {
+    font-size: 1.5rem;
+    color: rgb(18, 11, 78);
+    margin-bottom: 15px;
+}
+
+.service-image {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: block;
+}
+
+.package-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.package-tests {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.package-tests li {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.package-button {
+    text-align: center;
+    margin-top: 15px;
+}
+
+button {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(18, 11, 78);
+}
