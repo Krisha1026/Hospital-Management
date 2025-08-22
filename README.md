@@ -4,6 +4,7 @@
 
 A complete **hospital management web application** built to streamline healthcare operations, patient care, and administrative workflows.
 
+  [Check out the demo video ](https://www.linkedin.com/feed/update/urn:li:activity:7362435708134805504/)
 ## 🌟 Features
 
 ### 👨‍⚕️ User Roles
