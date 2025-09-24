@@ -34,3 +34,4 @@ A complete **hospital management web application** built to streamline healthcar
    - WAMP/XAMPP server
    - PHP 7.4+
    - MySQL 5.7+
+
