@@ -1,6 +1,6 @@
 
 
-// Sticky Navbar
+
 window.addEventListener("scroll", function () {
     const navbar = document.querySelector(".navbar");
     if (window.scrollY > 20) {
@@ -9,7 +9,7 @@ window.addEventListener("scroll", function () {
         navbar.classList.remove("sticky");
     }
 
-    // Scroll-up Button
+    
     const scrollUpBtn = document.querySelector(".scroll-up-btn");
     if (window.scrollY > 500) {
         scrollUpBtn.classList.add("show");
@@ -18,16 +18,16 @@ window.addEventListener("scroll", function () {
     }
 });
 
-// Scroll-up Button Click
+
 document.querySelector(".scroll-up-btn").addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-// Toggle Menu Functionality
+
 document.querySelector(".menu-btn").addEventListener("click", function () {
     const menu = document.querySelector(".navbar .menu");
-    menu.classList.toggle("active"); // Toggle the "active" class on the menu
-    this.querySelector("i").classList.toggle("active"); // Toggle the "active" class on the bars icon
+    menu.classList.toggle("active"); 
+    this.querySelector("i").classList.toggle("active"); 
 });
 
 // Typing Animation Script
@@ -40,36 +40,36 @@ function typeText(element, texts, speed, backSpeed, loop) {
         const currentText = texts[currentTextIndex];
 
         if (isDeleting) {
-            // Delete text
+            
             element.textContent = currentText.substring(0, currentCharIndex - 1);
             currentCharIndex--;
         } else {
-            // Add text
+            
             element.textContent = currentText.substring(0, currentCharIndex + 1);
             currentCharIndex++;
         }
 
-        // Check if text is fully typed or deleted
+        
         if (!isDeleting && currentCharIndex === currentText.length) {
-            // Pause before deleting
+            
             isDeleting = true;
             setTimeout(type, 1000); // Pause for 1 second
         } else if (isDeleting && currentCharIndex === 0) {
-            // Move to the next text
+           
             isDeleting = false;
             currentTextIndex = (currentTextIndex + 1) % texts.length;
-            setTimeout(type, 500); // Pause before typing next text
+            setTimeout(type, 500); 
         } else {
-            // Continue typing or deleting
+            
             setTimeout(type, isDeleting ? backSpeed : speed);
         }
     }
 
-    // Start the typing animation
+    
     type();
 }
 
-// Initialize typing animations
+
 const typingElement = document.querySelector(".typing");
 const typingElement2 = document.querySelector(".typing-2");
 
@@ -87,7 +87,7 @@ typeText(typingElement2, texts, 100, 60, true);
 
 
 
-// Carousel Functionality
+
 const carousel = document.querySelector(".carousel");
 const cards = document.querySelectorAll(".carousel .card");
 let currentIndex = 0;
@@ -164,6 +164,7 @@ const doctorProfiles = [
     document.getElementById("doctor-description").textContent = profile.description;
     document.getElementById("doctor-img").src = profile.img;
   }
+
 
 
 
