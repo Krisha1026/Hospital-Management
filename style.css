@@ -1,4 +1,4 @@
-/*  import google fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -11,7 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 
-/* custom scroll bar */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -26,7 +26,7 @@ html{
     background: #555;
 }
 
-/* all similar content styling codes */
+
 section{
     padding: 100px 0;
 }
@@ -77,7 +77,7 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* navbar styling */
+
 .navbar{
     position: fixed;
     width: 100%;
@@ -127,7 +127,7 @@ section .title::after{
     color: #fff;
 }
 
-/* menu btn styling */
+
 .menu-btn{
     color: #fff;
     font-size: 23px;
@@ -163,7 +163,7 @@ section .title::after{
 }
 
 
-/* home section styling */
+
 .home{
     display: flex;
     background: url("images/banner/banner1.png") no-repeat center;
@@ -220,7 +220,7 @@ section .title::after{
 }
 
 
-/*Search Bar Styling*/
+
 .searchbar-section{
    
     flex: 1;
@@ -313,7 +313,7 @@ section .title::after{
 
 
 
-/* about section styling */
+
 .about .title::after{
     content: "Care Compass";
 }
@@ -361,7 +361,7 @@ section .title::after{
 
 
 
-/* Typing Animation Styles */
+
 .typing,
 .typing-2 {
     display: inline-block;
@@ -384,7 +384,7 @@ section .title::after{
     }
 }
 
-/* services section styling */
+
 .services, .CareTeam{
     color:#fff;
     background:rgb(92, 128, 207);
@@ -444,7 +444,7 @@ section .title::after{
     padding-left: 4px;
 }
 
-/*Facilities section styling */
+
 
 .Facilities .title::after{
     content: "Care Compass";
@@ -519,7 +519,7 @@ section .title::after{
     width: 70%;
 }
 
-/* Care Team Section Styling */
+
 .CareTeam {
     background-color:rgb(92, 128, 207);
     padding: 100px 0;
@@ -626,7 +626,7 @@ section .title::after{
     line-height: 1.6;
   }
 
-/* contact section styling */
+
 .contact .title::after{
     content: "get in touch";
 }
@@ -724,8 +724,7 @@ section .title::after{
 
 
 
-/* footer section styling */
-/* Footer Styling */
+
 footer {
     background-color: rgb(9, 5, 44);
     color: #fff;
@@ -789,7 +788,7 @@ footer {
     font-size: 14px;
 }
 
-/* responsive media query start */
+
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
@@ -915,6 +914,7 @@ footer {
         line-height: 38px;
     }
 }
+
 
 
 
