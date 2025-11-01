@@ -133,7 +133,7 @@
         <h1>Respond to Queries</h1>
         <p>Handle patient inquiries.</p>
 
-        <!-- Table to display queries -->
+       
         <table>
             <thead>
                 <tr>
@@ -220,7 +220,7 @@
     </div>
 
     <script>
-        // JavaScript functions for handling actions
+       
         function viewQuery(id) {
 
             // Example query data .......................................
@@ -233,15 +233,15 @@
                 5: { patientName: "Lora", date: "2025-01-20", query: "Do you provide emergency services?" },
             };
 
-            // Check if the query ID exists in the data
+           
             if (queryData[id]) {
-                // Display query details
+                
                 document.getElementById('queryPatientName').textContent = queryData[id].patientName;
                 document.getElementById('queryDate').textContent = queryData[id].date;
                 document.getElementById('queryText').textContent = queryData[id].query;
                 document.getElementById('queryDetails').style.display = 'block';
 
-                // Show response form
+               
                 document.getElementById('responseForm').style.display = 'block';
             } else {
                 alert("Query not found.");
@@ -252,7 +252,7 @@
             if (confirm(`Are you sure you want to delete query ${id}?`)) {
                 alert(`Query ${id} deleted.`);
 
-                // Optionally, remove the row from the table
+                
                 const row = document.querySelector(`tr[data-id="${id}"]`);
                 if (row) {
                     row.remove();
@@ -268,10 +268,10 @@
                 // Submit the response .................
                 alert(`Response submitted: ${responseText}`);
 
-                // Clear the textarea
+               
                 document.getElementById('responseText').value = '';
 
-                // Hide the response form after submission
+               
                 document.getElementById('responseForm').style.display = 'none';
             } else {
                 alert("Please enter a response.");
@@ -283,4 +283,5 @@
         }
     </script>
 </body>
+
 </html>
