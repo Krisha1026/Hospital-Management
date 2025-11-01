@@ -1,4 +1,4 @@
-/*  import google fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -17,7 +17,7 @@ p{
 
 }
 
-/* all similar content styling codes */
+
 section{
     padding: 50px 0;
 }
@@ -118,7 +118,7 @@ section .title::after{
     color: #fff;
 }
 
-/* menu btn styling */
+
 .menu-btn{
     color: #fff;
     font-size: 23px;
@@ -153,7 +153,7 @@ section .title::after{
     filter: brightness(90%);
 }
 
-/* Footer Styling */
+
 footer {
     background-color: rgb(18, 11, 78);
     color: #fff;
@@ -217,7 +217,7 @@ footer {
     font-size: 14px;
 }
 
-/* responsive media query start */
+
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
@@ -269,4 +269,5 @@ footer {
         font-size: 23px;
         line-height: 38px;
     }
+
 }
