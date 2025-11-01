@@ -5,17 +5,17 @@ $username = "root";
 $password = ""; 
 $dbname = "care_compass"; 
 
-// Create connection
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$error_message = ""; // Initialize error message variable
+$error_message = ""; 
 
-// Handle registration
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $email = $_POST['email'];
@@ -24,18 +24,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $role = $_POST['role'];
     $contact = $_POST['contact'];
 
-    // Password match check
+    
     if ($password !== $confirm_password) {
         $error_message = "Passwords do not match!";
     } else {
-        // Hash the password before storing it
+        
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-        // Insert data into the database
+       
         $sql = "INSERT INTO register (username,email, password, role, contact) VALUES ('$username', '$email','$hashed_password', '$role', '$contact')";
 
         if ($conn->query($sql) === TRUE) {
-            // Redirect to login page with details
+            
             header("Location: login.php?username=$username&role=$role");
             exit();
         } else {
@@ -165,7 +165,7 @@ $conn->close();
     </form>
 </div>
 
-<!-- footer section start -->
+
 <footer>
     <div class="footer-container">
         <div class="footer-section about">
@@ -215,3 +215,4 @@ $conn->close();
 
 </body>
 </html>
+
