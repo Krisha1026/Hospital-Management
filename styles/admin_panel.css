@@ -1,4 +1,4 @@
-/* Container Styling */
+
 .container {
     max-width: 1200px;
     margin: 100px auto 60px;
@@ -19,7 +19,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Admin Menu Styling */
+
 .admin-menu {
     list-style: none;
     padding: 0;
@@ -73,7 +73,7 @@
     color: #ff6f61;
 }
 
-/* Content Styling */
+
 #content h3 {
     margin-top: 40px;
     color: #555;
@@ -81,7 +81,7 @@
     font-weight: 500;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .admin-menu {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -98,4 +98,5 @@
     .admin-menu li a span {
         font-size: 1rem;
     }
+
 }
