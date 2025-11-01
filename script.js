@@ -120,7 +120,7 @@ document.getElementById("searchButton").addEventListener("click", function () {
 
 const doctorProfiles = [
     {
-        name: "Dr. Krishanthini",
+        name: "Dr. Kristen",
         specialty: "Chief Surgeon",
         experience: "15 years",
         description: "Chief Surgeon with over 15 years of experience in advanced surgical procedures and patient care.",
@@ -134,14 +134,14 @@ const doctorProfiles = [
         img: "images/doctor5.jpg"
     },
     {
-        name: "Nurse Duwaraga",
+        name: "Nurse Lora",
         specialty: "Senior Nurse",
         experience: "12 years",
         description: "Senior Nurse ensuring top-quality patient care and post-operative recovery support.",
         img: "images/nurse.jpg"
     },
     {
-        name: "Dr. Madushani",
+        name: "Dr. Rebecca",
         specialty: "Pathologist",
         experience: "8 years",
         description: "Expert Pathologist conducting accurate lab diagnostics for precise medical treatment.",
@@ -164,6 +164,7 @@ const doctorProfiles = [
     document.getElementById("doctor-description").textContent = profile.description;
     document.getElementById("doctor-img").src = profile.img;
   }
+
 
 
 
