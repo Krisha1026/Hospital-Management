@@ -1,4 +1,4 @@
-/* Container Styling */
+
 .container {
     max-width: 1200px;
     margin: 100px auto 60px;
@@ -19,7 +19,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Staff Menu Styling */
+
 .staff-menu {
     list-style: none;
     padding: 0;
@@ -84,7 +84,7 @@
     color: #ff6f61; 
 }
 
-/* Content Styling */
+
 #content h3 {
     margin-top: 40px;
     color: #555;
@@ -119,4 +119,5 @@
     .staff-menu li a p {
         font-size: 0.8rem;
     }
+
 }
