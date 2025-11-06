@@ -1,16 +1,16 @@
 <?php
 session_start();
 
-// Database connection..............
+
 $servername = "localhost";
 $username = "root"; 
 $password = ""; 
 $dbname = "care_compass"; 
 
-// Create connection................
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['username'] = $username; 
 
 
-            // Set patient-specific session variable 
+            
             if ($role === "patient") {
                 $_SESSION['patient'] = $username; 
             }
@@ -192,13 +192,13 @@ $conn->close();
 <footer >
 
 <div class="footer-container">
-    <!-- About Section -->
+    
     <div class="footer-section about">
         <h3>Care Compass Hospitals</h3>
         <p>Care Compass Hospitals - Compassionate care, advanced treatments, and your well-being first. Stay updated on health tips and services!</p>
     </div>
 
-    <!-- Quick Links -->
+   
     <div class="footer-section links">
         <h4>Quick Links</h4>
         <ul>
@@ -211,7 +211,7 @@ $conn->close();
         </ul>
     </div>
 
-    <!-- Social Media Links -->
+    
     <div class="footer-section social">
         <h4>Connect with Us</h4>
         <div class="social-links"></div>
@@ -247,4 +247,5 @@ $conn->close();
 
 <div class="footer-bottom">
     <p>2025 Created By Krishanthini. All Rights Reserved.</p>
+
 </div>
