@@ -1,14 +1,14 @@
 <?php
-// Database connection
+
 $servername = "localhost";
 $username = "root"; 
 $password = ""; 
 $dbname = "care_compass"; 
 
-// Create connection
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -46,7 +46,6 @@ $conn->close();
     <link rel="website icon" type="png" href="../images/Care Compass logo.png">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../styles/general.css">
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     
@@ -262,3 +261,4 @@ $conn->close();
 
 </body>
 </html>
+
