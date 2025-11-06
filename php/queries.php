@@ -1,13 +1,13 @@
 <?php
 session_start();
 
-// Database connection details
+
 $host = 'localhost'; 
 $dbname = 'care_compass'; 
 $username = 'root'; 
 $password = ''; 
 
-// Function to establish a database connection
+
 function connectToDatabase() {
     global $host, $dbname, $username, $password;
 
@@ -45,7 +45,7 @@ function insertData($table, $data) {
 
 // Handle form submission
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Get form data
+    
     $name = trim($_POST['name']);
     $email = trim($_POST['email']);
     $query_type = trim($_POST['query_type']);
@@ -201,3 +201,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 </body>
 </html>
+
