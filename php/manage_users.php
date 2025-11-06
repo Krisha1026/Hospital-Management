@@ -205,7 +205,7 @@
         // Function to confirm deletion
         function confirmDelete(userId) {
             if (confirm("Are you sure you want to delete this user?")) {
-                // Perform deletion logic (AJAX call or form submission)
+                
                 alert("User " + userId + " deleted successfully!");
             }
         }
@@ -217,4 +217,5 @@
     </script>
 
 </body>
+
 </html>
